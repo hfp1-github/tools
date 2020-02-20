@@ -1,0 +1,7 @@
+huga
+piyo
+piy
+Traceback (most recent call last):
+  File "sample_argparse.py", line 23, in <module>
+    print(args[0])
+TypeError: 'Namespace' object is not subscriptable

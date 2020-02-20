@@ -1,0 +1,3 @@
+aaa##py sample_argparse.py hoge hoge -s hoge
+bbb##py sample_argparse.py huga huga -s huga
+ccc##py sample_argparse.py huga piyo -s piyo
