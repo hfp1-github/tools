@@ -43,5 +43,11 @@ else:
 
 # 保存
 for p, savepath in zip(csv_paths, savepaths):
-    df = pd.read_csv(p, header=None, encoding='shift-jis')
-    df.to_csv(savepath, header=False, index=False, encoding='utf-8')
+    try:
+        df = pd.read_csv(p, header=None, encoding='shift-jis')
+        df.to_csv(savepath, header=False, index=False, encoding='utf-8')
+        print('Success convert: {}'.format(p))
+    except:
+        print('Failed convert: {}'.format(p))
+
+print('Complete.')
